@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
 
 <body>
     <header>
-        <h1>Patient Management System</h1>
+        <h1>Patient Management Systems</h1>
         <nav>
             <a href="index.php">Home</a>
             <?php if ($_SESSION['role'] === 'Admin' || $_SESSION['role'] === 'Doctor'): ?>
