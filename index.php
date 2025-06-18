@@ -26,7 +26,7 @@ if (!isset($_SESSION['user_id'])) {
                 <a href="patients.php">Patients</a>
             <?php endif; ?>
             <?php if ($_SESSION['role'] === 'Admin'): ?>
-                <a href="doctors.php">Doctors</a>
+                <a href="doctors.php">Doctor</a>
             <?php endif; ?>
             <a href="appointments.php">View Appointments</a>
             <?php if ($_SESSION['role'] === 'Patient'): ?>
