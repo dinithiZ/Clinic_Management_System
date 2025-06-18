@@ -19,14 +19,14 @@ if (!isset($_SESSION['user_id'])) {
 
 <body>
     <header>
-        <h1>Patient Management Systems</h1>
+        <h1>Patient Management System</h1>
         <nav>
             <a href="index.php">Home</a>
             <?php if ($_SESSION['role'] === 'Admin' || $_SESSION['role'] === 'Doctor'): ?>
                 <a href="patients.php">Patients</a>
             <?php endif; ?>
             <?php if ($_SESSION['role'] === 'Admin'): ?>
-                <a href="doctors.php">Doctor</a>
+                <a href="doctors.php">Doctors</a>
             <?php endif; ?>
             <a href="appointments.php">View Appointments</a>
             <?php if ($_SESSION['role'] === 'Patient'): ?>
